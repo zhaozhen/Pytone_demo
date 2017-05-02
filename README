@@ -1,1 +1,20 @@
 根据flask写一个flask的小例子！书的名字是<FLASK web开发基于python的web应用开发实战>！
+
+## 请求钩子，fask支持以下4种钩子
+- before_first_request:注册一个函数，处理第一个请求运行
+- before_request：注册一个函数，在每次请求之前运行
+- after_request：注册一个函数，如果没有处理一场抛出，在每次请求之后运行
+- teardown_request:注册一个函数，即使有异常抛出，也在每次请求之后运行
+
+## flask-script是flask插件，用来falsk执行命令，
+## python hello_script.py runserver --help,runserver命令用debug模式启动web服务器
+
+## flask一般使用jinja2作为模板框架，jinja可以使用python的变量。
+## jinja2的变量过滤器
+- safe：渲染值时不转译，不要在不可信任的值使用safe过滤器，比如用户输入的表单
+- captitalize：首字母大写，其他小写
+- lower ：把值转化成小写
+- upper：吧值大写
+- titile ：把值的首字母转化成大写
+- trim：字母去掉空格
+- striptag：渲染之前去掉所有的html标签
