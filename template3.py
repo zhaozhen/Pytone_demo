@@ -7,6 +7,7 @@ def index():
 
 @app.route('/user/<name>')
 def user(name):
+    name=[12,21,23,23,23,2,3]
     return render_template('users.html',name=name)
 
 #启动

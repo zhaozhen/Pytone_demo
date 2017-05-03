@@ -18,3 +18,21 @@
 - titile ：把值的首字母转化成大写
 - trim：字母去掉空格
 - striptag：渲染之前去掉所有的html标签
+
+## jinja2模板复用的方法有两种，1是宏定义，2是继承
+
+## 使用flask-bootstrap集成twtter bootstarp,flask-bootstrap模板中定义的块如下
+- doc ：整个html文档
+- htlm_attribs:<html>标签属性
+- html ：<html> 标签中的内容
+- head ： <head> 标签中的内容
+- title ：<title>标签中的内容
+- matas ：一组<meta>标签
+- styles：层叠样式表
+- body——attribs:<body>标签属性
+- body:<body>标签中的内容
+- navbar:用户定义的导航条
+- content:用户定义的页面内容
+- stricpts:文档底部的javascript声明
+
+----------------特意铭记，jianja2，在一个url找不到的时候，会找下一个，而且页面有错也形象control，坑
